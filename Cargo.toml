@@ -1,0 +1,10 @@
+[package]
+name = "ActixExample"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+greeter_service = { path = "./greeter_service" }
